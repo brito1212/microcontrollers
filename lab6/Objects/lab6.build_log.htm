@@ -1,0 +1,671 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: felipe brito, mcs, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\PROJETOS\6PERIODO\LabMicro\microcontrollers\lab6\lab6.uvprojx
+Project File Date:  09/13/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+4 warnings generated.
+compiling system_stm32f10x.c...
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(30): warning: In file included from...
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(39): warning: // comments are not allowed in this language [-Wcomment]
+/// GPIO Pin identifier
+^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(173): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+extern void GPIO_PortClock (GPIO_TypeDef *GPIOx, bool enable);
+                                                 ^
+C:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(182): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+extern bool GPIO_GetPortClockState (GPIO_TypeDef *GPIOx);
+       ^
+C:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(197): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_PinConfigure(GPIO_TypeDef      *GPIOx,
+^
+C:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(26): warning: In file included from...
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.h(246): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  return (GPIOx->IDR);
+  ~~~~~~  ~~~~~~~^~~
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(47): warning: // comments are not allowed in this language [-Wcomment]
+#define AFIO_MAPR_SWJ_CFG_VAL   (AFIO_SWJ_FULL)    // Full SWJ (JTAG-DP + SW-DP)
+                                                   ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(56): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+void GPIO_PortClock (GPIO_TypeDef *GPIOx, bool enable) {
+                                          ^
+C:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(84): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_GetPortClockState (GPIO_TypeDef *GPIOx) {
+^
+C:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(111): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+bool GPIO_PinConfigure(GPIO_TypeDef *GPIOx, uint32_t num, GPIO_CONF conf,
+^
+C:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(128): warning: integer constant not in range of enumerated type 'GPIO_CONF' [-Wassign-enum]
+      conf &= ~1;
+              ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(140): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg &= ~(0xF << (num << 2));
+       ~~ ^~~~~~~~~~~~~~~~~~~~
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver/GPIO_STM32F10x.c(141): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  *reg |= ((conf << 2) | mode) << (num << 2);
+       ~~ ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+15 warnings generated.
+compiling GPIO_STM32F10x.c...
+../lab4/main.c(1): warning: In file included from...
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../lab4/main.c(2): warning: In file included from...
+../lab4/internos.h(3): warning: // comments are not allowed in this language [-Wcomment]
+//Defini<E7><F5>es
+^
+../lab4/internos.h(3): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+//Defini<E7><F5>es
+        ^
+../lab4/internos.h(9): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define ST72EN 5 //configura o system tick com frequ<EA>ncia de 72MHz e habilita o mesmo.
+                                                    ^
+../lab4/internos.h(17): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define TIM2UIF 1 //bit UIF do m<F3>dulo TIM2
+                                ^
+../lab4/internos.h(20): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define OC3PE 3 // CCR3 bufferizado / n<E3>o bufferizado (CCMR2)
+                                       ^
+../lab4/internos.h(21): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define OC2PE 11 //CCR2 bufferizado / n<E3>o bufferizado (CCMR1)
+                                       ^
+../lab4/internos.h(24): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define CC3E 8 // habilita/desabilita buffer de sa<ED>da (CCER)
+                                                  ^
+../lab4/internos.h(25): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define CC2E 4 // habilita/desabilita buffer de sa<ED>da (CCER)
+                                                  ^
+../lab4/internos.h(28): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+// Implementa<E7><F5>es das fun<E7><F5>es
+             ^
+../lab4/internos.h(28): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+// Implementa<E7><F5>es das fun<E7><F5>es
+                               ^
+../lab4/internos.h(29): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+// Habilita a gpio de acordo com a letra de identifica<E7><E3>o
+                                                      ^
+../lab4/internos.h(32): warning: no previous prototype for function 'habilita_gpio' [-Wmissing-prototypes]
+void habilita_gpio (uint8_t gpio_id)
+     ^
+../lab4/internos.h(32): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void habilita_gpio (uint8_t gpio_id)
+^
+static 
+../lab4/internos.h(57): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PAX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(58): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRL |= (4<<(gpio_bit*4));  // 0011b nos bits da porta PAX
+                       ~~  ~^~~~~~~~~~~~~~
+../lab4/internos.h(62): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(63): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRH |= (4<<((gpio_bit-8)*4));
+                       ~~  ~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(70): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PBX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(71): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRL |= (4<<(gpio_bit*4));  // 0011b nos bits da porta PBX
+                       ~~  ~^~~~~~~~~~~~~~
+../lab4/internos.h(75): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(76): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRH |= (4<<((gpio_bit-8)*4));
+                       ~~  ~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(82): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PBX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(83): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRL |= (4<<(gpio_bit*4));  // 0011b nos bits da porta PBX
+                       ~~  ~^~~~~~~~~~~~~~
+../lab4/internos.h(87): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(88): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRH |= (4<<((gpio_bit-8)*4));
+                       ~~  ~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(96): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+// Configura a gpio selecionada como sa<ED>da push-pull para prop<F3>sito geral a 50 MHz
+                                       ^
+../lab4/internos.h(96): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+// Configura a gpio selecionada como sa<ED>da push-pull para prop<F3>sito geral a 50 MHz
+                                                                 ^
+../lab4/internos.h(100): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+// valor: 0011 (3) nos bits de configura<E7><E3>o
+                                        ^
+../lab4/internos.h(50): warning: no previous prototype for function 'gpio_entrada_pp' [-Wmissing-prototypes]
+void gpio_entrada_pp (uint8_t gpio_id, uint8_t gpio_bit)
+     ^
+../lab4/internos.h(50): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void gpio_entrada_pp (uint8_t gpio_id, uint8_t gpio_bit)
+^
+static 
+../lab4/internos.h(109): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PAX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(110): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRL |= (3<<(gpio_bit*4));  // 0011b nos bits da porta PAX
+                       ~~  ~^~~~~~~~~~~~~~
+../lab4/internos.h(114): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(115): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRH |= (3<<((gpio_bit-8)*4));
+                       ~~  ~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(122): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PBX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(123): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRL |= (3<<(gpio_bit*4));  // 0011b nos bits da porta PBX
+                       ~~  ~^~~~~~~~~~~~~~
+../lab4/internos.h(127): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(128): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRH |= (3<<((gpio_bit-8)*4));
+                       ~~  ~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(134): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PBX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(135): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRL |= (3<<(gpio_bit*4));  // 0011b nos bits da porta PBX
+                       ~~  ~^~~~~~~~~~~~~~
+../lab4/internos.h(139): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(140): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRH |= (3<<((gpio_bit-8)*4));
+                       ~~  ~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(102): warning: no previous prototype for function 'gpio_saida_pp' [-Wmissing-prototypes]
+void gpio_saida_pp (uint8_t gpio_id, uint8_t gpio_bit)
+     ^
+../lab4/internos.h(102): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void gpio_saida_pp (uint8_t gpio_id, uint8_t gpio_bit)
+^
+static 
+../lab4/internos.h(154): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PAX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(155): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRL |= (11<<(gpio_bit*4));  // 0011b nos bits da porta PAX
+                       ~~  ~~^~~~~~~~~~~~~~
+../lab4/internos.h(159): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(160): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRH |= (11<<((gpio_bit-8)*4));
+                       ~~  ~~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(167): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRL &=~(15<<(gpio_bit*4));  
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(168): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRL |= (11<<(gpio_bit*4));
+                       ~~  ~~^~~~~~~~~~~~~~
+../lab4/internos.h(172): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(173): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRH |= (11<<((gpio_bit-8)*4));
+                       ~~  ~~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(179): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRL &=~(15<<(gpio_bit*4));  
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(180): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRL |= (11<<(gpio_bit*4));  
+                       ~~  ~~^~~~~~~~~~~~~~
+../lab4/internos.h(184): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(185): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRH |= (11<<((gpio_bit-8)*4));
+                       ~~  ~~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(195): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+// valor: 1000 (4) nos bits de configura<E7><E3>o
+                                        ^
+../lab4/internos.h(147): warning: no previous prototype for function 'gpio_saida_pp_alternada' [-Wmissing-prototypes]
+void gpio_saida_pp_alternada (uint8_t gpio_id, uint8_t gpio_bit)
+     ^
+../lab4/internos.h(147): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void gpio_saida_pp_alternada (uint8_t gpio_id, uint8_t gpio_bit)
+^
+static 
+../lab4/internos.h(204): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PAX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(205): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRL |= (4<<(gpio_bit*4));  // 0011b nos bits da porta PAX
+                       ~~  ~^~~~~~~~~~~~~~
+../lab4/internos.h(209): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(210): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOA->CRH |= (4<<((gpio_bit-8)*4));
+                       ~~  ~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(217): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PBX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(218): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRL |= (4<<(gpio_bit*4));  // 0011b nos bits da porta PBX
+                       ~~  ~^~~~~~~~~~~~~~
+../lab4/internos.h(222): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(223): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRH |= (4<<((gpio_bit-8)*4));
+                       ~~  ~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(229): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRL &=~(15<<(gpio_bit*4)); // 0000b nos bits da porta PBX 
+                       ~~^~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(230): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRL |= (4<<(gpio_bit*4));  // 0011b nos bits da porta PBX
+                       ~~  ~^~~~~~~~~~~~~~
+../lab4/internos.h(234): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRH &=~(15<<((gpio_bit-8)*4)); 
+                       ~~^~~~~~~~~~~~~~~~~~~~~~~
+../lab4/internos.h(235): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRH |= (4<<((gpio_bit-8)*4));
+                       ~~  ~^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(197): warning: no previous prototype for function 'gpio_entrada' [-Wmissing-prototypes]
+void gpio_entrada (uint8_t gpio_id, uint8_t gpio_bit)
+     ^
+../lab4/internos.h(197): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void gpio_entrada (uint8_t gpio_id, uint8_t gpio_bit)
+^
+static 
+../lab4/internos.h(259): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRL &= ~(4<<gpio_bit);
+                       ~~ ^~~~~~~~~~~~~~
+../lab4/internos.h(263): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOB->CRH &= ~(4<<(gpio_bit-8));
+                       ~~ ^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(269): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRL &= ~(4<<gpio_bit);
+                       ~~ ^~~~~~~~~~~~~~
+../lab4/internos.h(273): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIOC->CRH &= ~(4<<(gpio_bit-8));
+                       ~~ ^~~~~~~~~~~~~~~~~~
+../lab4/internos.h(241): warning: no previous prototype for function 'gpio_entrada_analogico' [-Wmissing-prototypes]
+void gpio_entrada_analogico (uint8_t gpio_id, uint8_t gpio_bit)
+     ^
+../lab4/internos.h(241): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void gpio_entrada_analogico (uint8_t gpio_id, uint8_t gpio_bit)
+^
+static 
+../lab4/internos.h(279): warning: no previous prototype for function 'delay_st_ms' [-Wmissing-prototypes]
+void delay_st_ms(uint16_t valor)
+     ^
+../lab4/internos.h(279): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delay_st_ms(uint16_t valor)
+^
+static 
+../lab4/internos.h(296): warning: equality comparison result unused [-Wunused-comparison]
+    TIM2 ->CR1 == TIM2STP; //Pausa a contagem
+    ~~~~~~~~~~~^~~~~~~~~~
+../lab4/internos.h(296): note: use '=' to turn this equality comparison into an assignment
+    TIM2 ->CR1 == TIM2STP; //Pausa a contagem
+               ^~
+               =
+../lab4/internos.h(288): warning: no previous prototype for function 'delay_gpt_ms' [-Wmissing-prototypes]
+void delay_gpt_ms (uint16_t valor)
+     ^
+../lab4/internos.h(288): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delay_gpt_ms (uint16_t valor)
+^
+static 
+../lab4/internos.h(299): warning: no previous prototype for function 'habilita_timer' [-Wmissing-prototypes]
+void habilita_timer(timer_id)
+     ^
+../lab4/internos.h(299): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void habilita_timer(timer_id)
+^
+static 
+../lab4/internos.h(299): warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+void habilita_timer(timer_id)
+     ^
+../lab4/internos.h(316): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+    uint16_t psc = 72000000/(100*freq)-1;
+             ~~~   ~~~~~~~~~~~~~~~~~~~^~
+../lab4/internos.h(321): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+    TIM3->ARR = 100 - 1; // contagem m<E1>xima de 100
+                                      ^
+../lab4/internos.h(326): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        TIM3->CCR1 = ciclo; // come<E7>a com o ct de 25%
+                                   ^
+../lab4/internos.h(329): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        TIM3->CCR2 = ciclo; // come<E7>a com o ct de 25%
+                                   ^
+../lab4/internos.h(332): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        TIM3->CCR3 = ciclo; // come<E7>a com o ct de 25%
+                                   ^
+../lab4/internos.h(335): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        TIM3->CCR4 = ciclo; // come<E7>a com o ct de 25%
+                                   ^
+../lab4/internos.h(314): warning: no previous prototype for function 'pwm_timer_3' [-Wmissing-prototypes]
+void pwm_timer_3(uint16_t freq, uint8_t ciclo, uint8_t canal)
+     ^
+../lab4/internos.h(314): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void pwm_timer_3(uint16_t freq, uint8_t ciclo, uint8_t canal)
+^
+static 
+../lab4/internos.h(346): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+    uint16_t psc = 72000000/(100*freq)-1;
+             ~~~   ~~~~~~~~~~~~~~~~~~~^~
+../lab4/internos.h(351): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+    TIM2->ARR = 100 - 1; // contagem m<E1>xima de 100
+                                      ^
+../lab4/internos.h(356): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        TIM2->CCR1 = ciclo; // come<E7>a com o ct de 25%
+                                   ^
+../lab4/internos.h(359): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        TIM2->CCR2 = ciclo; // come<E7>a com o ct de 25%
+                                   ^
+../lab4/internos.h(362): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        TIM2->CCR3 = ciclo; // come<E7>a com o ct de 25%
+                                   ^
+../lab4/internos.h(365): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        TIM2->CCR4 = ciclo; // come<E7>a com o ct de 25%
+                                   ^
+../lab4/internos.h(344): warning: no previous prototype for function 'pwm_timer_2' [-Wmissing-prototypes]
+void pwm_timer_2(uint16_t freq, uint8_t ciclo, uint8_t canal)
+     ^
+../lab4/internos.h(344): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void pwm_timer_2(uint16_t freq, uint8_t ciclo, uint8_t canal)
+^
+static 
+../lab4/main.c(3): warning: In file included from...
+../lab4/externos.h(3): warning: // comments are not allowed in this language [-Wcomment]
+// #include "internos.h"
+^
+../lab4/externos.h(5): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+//Defini<E7><F5>es dos perifi<E9>ricos externos da placa
+        ^
+../lab4/externos.h(5): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+//Defini<E7><F5>es dos perifi<E9>ricos externos da placa
+                             ^
+../lab4/externos.h(34): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+//valores lidos quando as chaves s<E3>o pressionadas
+                                  ^
+../lab4/externos.h(68): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+//fun<E7><F5>es comuns
+     ^
+../lab4/externos.h(69): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void corrige_jtag()
+                 ^
+                  void
+../lab4/externos.h(69): warning: no previous prototype for function 'corrige_jtag' [-Wmissing-prototypes]
+void corrige_jtag()
+     ^
+../lab4/externos.h(69): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void corrige_jtag()
+^
+static 
+../lab4/externos.h(79): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for(uint16_t i = 0; i < t; i++)
+        ^
+../lab4/externos.h(79): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+../lab4/externos.h(85): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+// Fun<E7><F5>es para trabalhar com os LEDs
+      ^
+../lab4/externos.h(76): warning: no previous prototype for function 'delay_ms' [-Wmissing-prototypes]
+void delay_ms(uint16_t t)
+     ^
+../lab4/externos.h(76): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delay_ms(uint16_t t)
+^
+static 
+../lab4/externos.h(86): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void leds_apaga_todos()
+                     ^
+                      void
+../lab4/externos.h(88): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIOA->ODR &= ~((1<<LED1)|(1<<LED2)|(1<<LED3)|(1<<LED4)|(1<<LED5)|(1<<LED6)|(1<<LED7)|(1<<LED8));
+               ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../lab4/externos.h(86): warning: no previous prototype for function 'leds_apaga_todos' [-Wmissing-prototypes]
+void leds_apaga_todos()
+     ^
+../lab4/externos.h(86): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void leds_apaga_todos()
+^
+static 
+../lab4/externos.h(91): warning: no previous prototype for function 'led_acende' [-Wmissing-prototypes]
+void led_acende(uint8_t led_id)
+     ^
+../lab4/externos.h(91): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void led_acende(uint8_t led_id)
+^
+static 
+../lab4/externos.h(96): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void leds_acende_todos()
+                      ^
+                       void
+../lab4/externos.h(96): warning: no previous prototype for function 'leds_acende_todos' [-Wmissing-prototypes]
+void leds_acende_todos()
+     ^
+../lab4/externos.h(96): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void leds_acende_todos()
+^
+static 
+../lab4/externos.h(116): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int chaves_ler_todas()
+                    ^
+                     void
+../lab4/externos.h(120): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+    chave_id_gpiob = GPIOB->IDR;
+                   ~ ~~~~~~~^~~
+../lab4/externos.h(121): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+    chave_id_gpioa = GPIOA->IDR;
+                   ~ ~~~~~~~^~~
+../lab4/externos.h(122): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+    chave_id_gpioc = GPIOC->IDR;
+                   ~ ~~~~~~~^~~
+../lab4/externos.h(116): warning: no previous prototype for function 'chaves_ler_todas' [-Wmissing-prototypes]
+int chaves_ler_todas()
+    ^
+../lab4/externos.h(116): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int chaves_ler_todas()
+^
+static 
+../lab4/externos.h(208): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        GPIOA->BSRR = ((aux&0x0008)<<8) | ((aux&0x0004)<<3) | ((aux&0x0002)<<5) | ((aux&0x0001)<<8);
+                    ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+../lab4/externos.h(211): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->ODR &= ~ (1<<LCD_EN);    /* EN = 0 for H-to-L pulse */
+                   ~~ ^~~~~~~~~~~~~
+../lab4/externos.h(216): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        GPIOA->BSRR = ((aux&0x0008)<<8) | ((aux&0x0004)<<3) | ((aux&0x0002)<<5) | ((aux&0x0001)<<8);
+                    ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+../lab4/externos.h(219): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  GPIOA->ODR &= ~(1<<LCD_EN);   /* EN = 0 for H-to-L pulse */
+             ~~ ^~~~~~~~~~~~
+../lab4/externos.h(225): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->ODR &= ~ (1<<LCD_RS);    /* RS = 0 for command */
+                   ~~ ^~~~~~~~~~~~~
+../lab4/externos.h(246): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void lcd_init()
+             ^
+              void
+../lab4/externos.h(249): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->ODR &= ~(1<<LCD_EN);     /* LCD_EN = 0 */
+                   ~~ ^~~~~~~~~~~~
+../lab4/externos.h(265): warning: no previous prototype for function 'bcd_ascii' [-Wmissing-prototypes]
+char bcd_ascii(char valor) {
+     ^
+../lab4/externos.h(265): note: declare 'static' if the function is not intended to be used outside of this translation unit
+char bcd_ascii(char valor) {
+^
+static 
+../lab4/externos.h(281): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+            result = bcd_ascii(centenas);
+                     ~~~~~~~~~ ^~~~~~~~
+../lab4/externos.h(284): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+            result = bcd_ascii(dezenas);
+                     ~~~~~~~~~ ^~~~~~~
+../lab4/externos.h(287): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+            result = bcd_ascii(unidades);
+                     ~~~~~~~~~ ^~~~~~~~
+../lab4/externos.h(277): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+                char result = 0;
+                     ^
+../lab4/externos.h(270): warning: no previous prototype for function 'bin_bcd' [-Wmissing-prototypes]
+char bin_bcd(char valor, char retorno) {
+     ^
+../lab4/externos.h(270): note: declare 'static' if the function is not intended to be used outside of this translation unit
+char bin_bcd(char valor, char retorno) {
+^
+static 
+../lab4/externos.h(301): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+// Fun<E7><E3>o para converter valor BCD para ASCII
+      ^
+../lab4/externos.h(296): warning: no previous prototype for function 'buzzer_toca_nota' [-Wmissing-prototypes]
+void buzzer_toca_nota(uint16_t freq, uint8_t ciclo, uint16_t tempo)
+     ^
+../lab4/externos.h(296): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void buzzer_toca_nota(uint16_t freq, uint8_t ciclo, uint16_t tempo)
+^
+static 
+../lab4/main.c(13): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+void toca_buzzer(){     
+                ^
+                 void
+../lab4/main.c(13): warning: no previous prototype for function 'toca_buzzer' [-Wmissing-prototypes]
+void toca_buzzer(){     
+     ^
+../lab4/main.c(13): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void toca_buzzer(){     
+^
+static 
+../lab4/main.c(52): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int main()
+        ^
+         void
+../lab4/main.c(54): warning: // comments are not allowed in this language [-Wcomment]
+        //Configurar GPIO
+        ^
+../lab4/main.c(79): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+137 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=2576 RO-data=252 RW-data=0 ZI-data=1632  
+".\Objects\lab6.axf" - 0 Error(s), 156 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: GPIO Version: 1.3
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/felip/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+  C:/Users/felip/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/RTE_Driver
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:GPIO:1.3
+      Include file:  RTE_Driver/GPIO_STM32F10x.h
+      Source file:   RTE_Driver/GPIO_STM32F10x.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/system_stm32f10x.c
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

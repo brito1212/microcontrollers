@@ -2,90 +2,78 @@
 #include "internos.h"
 #include "externos.h"
 
-void contagem_crescente(int n);
-void contagem_decrescente(int n);
-void print_menu();
-void chaves_loop_lcd();
+#define DO 1047/2
+#define RE 1175/2
+#define MI 1319/2
+#define FA 1397/2
+#define SOL 1568/2
+#define LA 1760/2
+#define SI 1976/2
+
+void toca_buzzer(){	
+	buzzer_toca_nota(DO, 25, 100);
+	buzzer_toca_nota(RE, 25, 100);
+	buzzer_toca_nota(MI, 25, 100);
+	buzzer_toca_nota(FA, 25, 200);
+	buzzer_toca_nota(FA, 0, 10);
+	buzzer_toca_nota(FA, 25, 100);
+	buzzer_toca_nota(FA, 0, 10);
+	buzzer_toca_nota(FA, 25, 200);
+	buzzer_toca_nota(FA, 0, 20);
+	buzzer_toca_nota(DO, 25, 100);
+	buzzer_toca_nota(RE, 25, 100);
+	buzzer_toca_nota(DO, 25, 100);
+	buzzer_toca_nota(RE, 25, 200);
+	buzzer_toca_nota(FA, 0, 10);
+	buzzer_toca_nota(RE, 25, 100);
+	buzzer_toca_nota(FA, 0, 10);
+	buzzer_toca_nota(RE, 25, 200);
+	buzzer_toca_nota(FA, 0, 20);
+	buzzer_toca_nota(DO, 25, 100);
+	buzzer_toca_nota(SOL, 25, 100);
+	buzzer_toca_nota(FA, 25, 100);
+	buzzer_toca_nota(MI, 25, 200);
+	buzzer_toca_nota(FA, 0, 10);
+	buzzer_toca_nota(MI, 25, 100);
+	buzzer_toca_nota(FA, 0, 10);
+	buzzer_toca_nota(MI, 25, 200);
+	buzzer_toca_nota(FA, 0, 20);
+	buzzer_toca_nota(DO, 25, 100);
+	buzzer_toca_nota(RE, 25, 100);
+	buzzer_toca_nota(MI, 25, 100);
+	buzzer_toca_nota(FA, 25, 200);
+	buzzer_toca_nota(FA, 0, 20);
+	buzzer_toca_nota(FA, 25, 100);
+	buzzer_toca_nota(FA, 0, 10);
+	buzzer_toca_nota(FA, 25, 200);
+	buzzer_toca_nota(FA, 0, 20);
+}
 
 int main()
 {
+	//Configurar GPIO
 	habilita_gpio('a');
+	habilita_gpio('b');
 	corrige_jtag();
 	delay_ms(10);
-	gpio_saida_pp('a', LCD_EN);
-	gpio_saida_pp('a', LCD_RS);
+	gpio_saida_pp('a', LED1);
+	gpio_saida_pp('a', LED2);
+	gpio_saida_pp('a', LED3);
+	gpio_saida_pp('a', LED4);
 	gpio_saida_pp('a', LED5);
 	gpio_saida_pp('a', LED6);
 	gpio_saida_pp('a', LED7);
 	gpio_saida_pp('a', LED8);
-	gpio_entrada_pp('b', SW1);
-	gpio_entrada_pp('b', SW2);
-	
-	lcd_init();
+	leds_apaga_todos();
+	gpio_saida_pp_alternada('a', LED2);
+	gpio_saida_pp_alternada('b', BUZZER);
 
-	while(1){
-		print_menu();
-		chaves_loop_lcd();
+ //timers
+	habilita_timer(2);
+	habilita_timer(3);
+
+	while(1)
+	{
+		toca_buzzer();
 	}
-	
-	return 0;
-}
-
-void chaves_loop_lcd(){
-		int key = chaves_ler_todas();
-		switch(key){
-			case SW1:
-				contagem_crescente(5);
-				break;
-			case SW2:
-				contagem_decrescente(5);
-				break;
-			default:
-				break;
-		}
-}
-
-
-void contagem_decrescente(int n){
-	char c, d, u;
-	for (int i = n; i >= 0; i--) {
-		lcd_command(0x01);
-		c = bin_bcd(i, 'c');
-		d = bin_bcd(i, 'd');
-		u = bin_bcd(i, 'u');
-		
-		lcd_data(c);
-		delay_ms(10);
-		lcd_data(d);
-		delay_ms(10);
-		lcd_data(u);
-		
-		delay_ms(1000);
-	}
-}
-
-void contagem_crescente(int n){
-	char c, d, u;
-	for (int i = 0; i < n + 1; i++) {
-		lcd_command(0x01);
-		c = bin_bcd(i, 'c');
-		d = bin_bcd(i, 'd');
-		u = bin_bcd(i, 'u');
-		
-		lcd_data(c);
-		delay_ms(100);
-		lcd_data(d);
-		delay_ms(100);
-		lcd_data(u);
-		
-		delay_ms(1000);
-	}
-}
-
-
-void print_menu(){
-	lcd_command(0x80);
-	lcd_print("SW1: Crescente");
-	lcd_command(0xC0);
-	lcd_print("SW2: Decrescente");
 }
