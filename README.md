@@ -24,6 +24,12 @@ Description: Configure and control LCD display. Using the Switches to control wh
 - Folder: `Lab3`
 - Files: `main.c`, `externos.h`, `internos.h`
 
+### Lab Class 4: PWM
+
+Description: Output compare and PWM
+- Folder: `Lab6`
+- Files: `main.c`, `externos.h`, `internos.h`
+
 ## How to Use
 
 1. Clone the repository to your local machine using the following command:
