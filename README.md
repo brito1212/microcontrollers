@@ -4,31 +4,38 @@ Welcome to the Microcontrollers and Microprocessors Laboratory repository! This 
 
 ## Lab Classes
 
-### Lab Class 1: Introduction to STM32F103C8 Microcontroller
+### Lab Class 2: Introduction to STM32F103C8 Microcontroller
 
 Description: This lab class introduces the STM32F103C8 microcontroller, covers its features, and sets up the development environment.
 
 - Folder: `Lab1`
 - Files: `main.c`
 
-### Lab Class 2: GPIO Control and Digital Inputs/Outputs
+### Lab Class 3: GPIO Control and Digital Inputs/Outputs
 
 Description: Configure and control GPIO pins for digital outputs, using LEDs.
 
 - Folder: `Lab2`
 - Files: `main.c`, `externos.h`, `internos.h`
 
-### Lab Class 3: LCD Control
+### Lab Class 4: LCD Control
 
 Description: Configure and control LCD display. Using the Switches to control what is displayed.
 - Folder: `Lab3`
 - Files: `main.c`, `externos.h`, `internos.h`
 
-### Lab Class 4: PWM
+### Lab Class 6: PWM
 
 Description: Output compare and PWM
 - Folder: `Lab6`
 - Files: `main.c`, `externos.h`, `internos.h`
+
+### Lab Class 7 and 8: Piano Project
+
+Description: Making a piano using RedPill keys
+- Folder: `projeto`
+- Files: `main.c`, `externos.h`, `internos.h`
+
 
 ## How to Use
 
