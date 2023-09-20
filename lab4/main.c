@@ -2,13 +2,18 @@
 #include "internos.h"
 #include "externos.h"
 
-#define DO 1047/2
-#define RE 1175/2
-#define MI 1319/2
-#define FA 1397/2
-#define SOL 1568/2
-#define LA 1760/2
-#define SI 1976/2
+#define DO 1047
+#define DOs 1109
+#define RE 1175
+#define REs 1245
+#define MI 1319
+#define FA 1397
+#define FAs 1480
+#define SOL 1568
+#define SOLs 1661
+#define LA 1760
+#define LAs 1865
+#define SI 1976
 
 void toca_buzzer(){	
 	buzzer_toca_nota(DO, 25, 100);
